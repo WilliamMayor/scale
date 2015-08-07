@@ -1,0 +1,80 @@
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+}
+.blurb {
+    width: 800px;
+    padding: 20px;
+    margin: auto;
+}
+.total {
+    text-align: center;
+    margin: 10px 0;
+}
+section {
+    width: 450px;
+    padding: 20px;
+    margin: auto;
+}
+section .label, section .input {
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+    margin: 0 5px;
+}
+.description {
+    font-size: smaller;
+}
+.population input {
+    width: 190px;
+    padding: 5px;
+}
+div.range-slider {
+    position: relative;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+}
+
+div.range-slider input {
+    pointer-events: none;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 15px;
+    width: 200px;
+    outline: none;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+div.range-slider input::-webkit-slider-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 1;
+    outline: 0;
+}
+
+div.range-slider input::-moz-range-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 10;
+    -moz-appearance: none;
+    width: 9px;
+}
+
+div.range-slider input::-moz-range-track {
+    position: relative;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 1);
+    border: 0;
+}
+div.range-slider input:last-of-type::-moz-range-track {
+    -moz-appearance: none;
+    background: none transparent;
+    border: 0;
+}
+  div.range-slider input[type=range]::-moz-focus-outer {
+  border: 0;
+}

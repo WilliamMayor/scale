@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Scale - A disgusting way to treat people</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="blurb">
+            <p>Welcome to Scale, a website that helps you decide how picky you should be when selecting partners.</p>
+            <p>First, you need to know how many people you're selecting from, <a href="http://www.wolframalpha.com/?source=nav">Wolfram Alpha</a> can be helpful here.</p>
+            <p>Then, for each of the qualities below, decide what range you'd be willing to accept in a partner.</p>
+            <p>At the bottom of the page you'll find how many people exist that you'd be happy with.</p></div>
+        <section class="population">
+            <div class="label">
+                <label>Population Size</label>
+                <div class="description">The total number of people in the pool you are considering. For instance, <a href="http://wolfr.am/6icTOXpO" target="_blank">the numer of women aged 18-64 in New York City</a>.</div>
+            </div>
+            <div class="input">
+                <input type="number" id="population" value="2829000">
+            </div>
+        </section>
+        <section class="hot">
+            <div class="label">
+                <label>Hot</label>
+                <div class="description">What range of hot are you willing to consider? 0 makes you vomit, 10 makes you spontaneously jizz.</div>
+            </div>
+            <div class="input range-slider">
+                <span class="rangeValues"></span>
+                <input value="4" min="0" max="10" step="1" type="range">
+                <input value="10" min="0" max="10" step="1" type="range">
+            </div>
+        </section>
+        <section class="crazy">
+            <div class="label">
+                <label>Crazy</label>
+                <div class="description">What range of crazy are you willing to consider? 0 drives a Prius because the tax incentives make it an affordable family car. 10 drives a prius because the aliens are tracking us through our petrol consumption.</div>
+            </div>
+            <div class="input range-slider">
+                <span class="rangeValues"></span>
+                <input value="0" min="0" max="10" step="1" type="range">
+                <input value="8" min="0" max="10" step="1" type="range">
+            </div>
+        </section>
+        <section class="clever">
+            <div class="label">
+                <label>Clever</label>
+                <div class="description">What range of clever are you willing to consider? 0 forgets to breathe sometimes, 10 just beat Stephen Hawking at chess.</div>
+            </div>
+            <div class="input range-slider">
+                <span class="rangeValues"></span>
+                <input value="4" min="0" max="10" step="1" type="range">
+                <input value="7" min="0" max="10" step="1" type="range">
+            </div>
+        </section>
+        <section class="funny">
+            <div class="label">
+                <label>Funny</label>
+                <div class="description">What range of funny are you willing to consider? 0 is probably German, 10 will make you rupture your spleen.</div>
+            </div>
+            <div class="input range-slider">
+                <span class="rangeValues"></span>
+                <input value="5" min="0" max="10" step="1" type="range">
+                <input value="8" min="0" max="10" step="1" type="range">
+            </div>
+        </section>
+        <section class="slutty">
+            <div class="label">
+                <label>Slutty</label>
+                <div class="description">What range of slutty are you willing to consider? 0 will never, ever, be naked (ewww). 10 is currently being gang-banged by your parents.</div>
+            </div>
+            <div class="input range-slider">
+                <span class="rangeValues"></span>
+                <input value="4" min="0" max="10" step="1" type="range">
+                <input value="7" min="0" max="10" step="1" type="range">
+            </div>
+        </section>
+        <section class="rich">
+            <div class="label">
+                <label>Rich</label>
+                <div class="description">What range of rich are you willing to consider? 0 was a student in the US who then had to go hospital. 10 is bank rolling their own mission to Mars.</div>
+            </div>
+            <div class="input range-slider">
+                <span class="rangeValues"></span>
+                <input value="5" min="0" max="10" step="1" type="range">
+                <input value="10" min="0" max="10" step="1" type="range">
+            </div>
+        </section>
+        <div class="blurb">
+            If we assume that each of the hot, crazy, clever, funny, slutty, and rich scales are normally distributed over your population and that each is independent from the others, then:
+            <div class="total">There are <span id="results-total">0</span> people that meet your requirements.</div>
+        </div>
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
